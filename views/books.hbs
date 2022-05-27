@@ -1,0 +1,15 @@
+<h1>All books</h1>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Year</th>
+    </tr>
+        {{#each books}}
+            <tr>
+                <td>{{this.id}}</td>
+                <td>{{this.name}}</td>
+                <td>{{this.year}}</td>
+            </tr>
+        {{/each}}
+</table>
