@@ -64,6 +64,7 @@ router.post('/add', authMiddleware, (req, res) => {
     let bookSchema = Joi.object({
         name: Joi.string().min(3).max(30).required(),
         password: Joi.string().min(5).required(),
+        img: Joi.string().required()
     })
 
     const result = bookSchema.validate(req.body)
@@ -76,7 +77,7 @@ router.post('/add', authMiddleware, (req, res) => {
     // console.log(!!result.error);  // error bor bo'lsa true yo'q bo'lsa false deydi
 
     // Obyektni yaratamiz yangi kitobni
-    let users = new Data(req.body.name, req.body.password)
+    let users = new Data(req.body.name, req.body.password, req.body.img)
 
     users.pushUser()
 

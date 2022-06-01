@@ -2,15 +2,17 @@ const fs = require('fs')
 const path = require('path')
 
 class Data {
-    constructor(name, password) {
+    constructor(name, password, img) {
         this.name = name,
-            this.password = password
+        this.password = password
+        this.img = img
     }
 
     toObj() {
         return {
             name: this.name,
-            password: this.password
+            password: this.password,
+            img: this.img
         }
     }
 

@@ -16,7 +16,11 @@ require('dotenv').config()
 
 const exhbs = create({
     extname: 'hbs',
-    defaultLayout: 'layout'
+    defaultLayout: 'layout',
+    runtimeOptions: {
+        allowProtoMethodsByDefault: true,
+        allowProtoPropertiesByDefault: true
+    },
 })
 
 // View engine
@@ -36,7 +40,7 @@ app.use(express.json()) // json // requestlar uchun // req body ni json formatga
 app.use(express.urlencoded({ extended: true }))
 
 // HTTP headers security middleware
-app.use(helmet())
+// app.use(helmet())        
 
 // Logger
 // console.log(app.get('env'));
