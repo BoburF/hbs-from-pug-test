@@ -1,0 +1,35 @@
+<div class="container">
+  <h1>All books</h1>
+  {{!-- <table>
+    <tr>
+        <th>Name</th>
+        <th>Password</th>
+    </tr>
+        {{#each users}}
+            <tr>
+                <td>{{this.name}}</td>
+                <td>{{this.password}}</td>
+            </tr>
+        {{/each}}
+</table> --}}
+
+  <div class="row">
+    {{#each users}}
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="{{img}}" alt="jpg" />
+            <span class="card-title">{{name}}</span>
+          </div>
+          <div class="card-content">
+            <p>{{password}}</p>
+          </div>
+          <div class="card-action">
+            <a href="#">This is a link</a>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+  <a href="/api/books/add" class="link">Add user</a>
+</div>

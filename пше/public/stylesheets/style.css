@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bodyContent {
+    height: 81.8vh;
+}
+
+body{
+    background: url(../images/zahir-accounting-software-have-more-than-60.000-users.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+table {
+    max-width: 800px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.link{
+    width: 20%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid #000;
+    background: #000;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.form_btn{
+    padding: 20px;
+    text-transform: uppercase;
+    display: block;
+    margin: auto;
+}
