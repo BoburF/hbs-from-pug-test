@@ -1,15 +1,16 @@
-<h1>All books</h1>
+<div class="container">
+    <h1>All books</h1>
 <table>
     <tr>
-        <th>ID</th>
         <th>Name</th>
-        <th>Year</th>
+        <th>Password</th>
     </tr>
-        {{#each books}}
+        {{#each users}}
             <tr>
-                <td>{{this.id}}</td>
                 <td>{{this.name}}</td>
-                <td>{{this.year}}</td>
+                <td>{{this.password}}</td>
             </tr>
         {{/each}}
 </table>
+<a href="/api/books/add">Add user</a>
+</div>
