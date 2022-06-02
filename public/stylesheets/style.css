@@ -5,7 +5,7 @@
 }
 
 .bodyContent {
-    height: 81.8vh;
+    /* height: 81.8vh; */
 }
 
 body{
@@ -44,4 +44,10 @@ table {
     text-transform: uppercase;
     display: block;
     margin: auto;
+}
+
+.card-image .card-title{
+    color: #000 !important;
+    /* font-size: 22px; */
+    font-weight: 700;
 }
